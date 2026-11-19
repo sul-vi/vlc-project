@@ -1,0 +1,992 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "data_dir": "C:\\Users\\sll\\Desktop\\vlc project\\data",
+    "image_size": 32,
+    "uniform": [
+      4.0,
+      2.0,
+      1.0
+    ],
+    "proposed": [
+      6.0,
+      2.0,
+      1.0
+    ],
+    "channels": 16,
+    "width": 32,
+    "compression": 0.8,
+    "balanced_pairs": true,
+    "candidates": [
+      [
+        6.0,
+        2.0,
+        1.0
+      ]
+    ],
+    "classifier_epochs": 14,
+    "task_weight": 0.5,
+    "snrs": [
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "train_snr": [
+      -5.0,
+      25.0
+    ],
+    "mode_probs": [
+      0.25,
+      0.25,
+      0.5
+    ],
+    "val_points": [
+      [
+        2,
+        5.0
+      ],
+      [
+        4,
+        10.0
+      ],
+      [
+        8,
+        5.0
+      ],
+      [
+        8,
+        20.0
+      ]
+    ],
+    "lr": 0.001,
+    "epochs": 30,
+    "batch_size": 64,
+    "validation_holdout": 5000,
+    "train_limit": 15000,
+    "val_limit": 1024,
+    "test_limit": 0,
+    "seed": 2026,
+    "device": "auto",
+    "run": "v3",
+    "output_dir": "",
+    "eval_ratio": "",
+    "jpeg_qualities": [
+      95,
+      90,
+      85,
+      80,
+      75,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      5,
+      1
+    ],
+    "probe_symbols": 262144
+  },
+  "checkpoint": {
+    "config": {
+      "dataset": "cifar10",
+      "data_dir": "C:\\Users\\sll\\Desktop\\vlc project\\data",
+      "image_size": 32,
+      "uniform": [
+        4.0,
+        2.0,
+        1.0
+      ],
+      "proposed": [
+        6.0,
+        2.0,
+        1.0
+      ],
+      "channels": 16,
+      "width": 32,
+      "compression": 0.8,
+      "balanced_pairs": true,
+      "candidates": [
+        [
+          6.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "classifier_epochs": 14,
+      "task_weight": 0.5,
+      "snrs": [
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "train_snr": [
+        -5.0,
+        25.0
+      ],
+      "mode_probs": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "val_points": [
+        [
+          2,
+          5.0
+        ],
+        [
+          4,
+          10.0
+        ],
+        [
+          8,
+          5.0
+        ],
+        [
+          8,
+          20.0
+        ]
+      ],
+      "lr": 0.001,
+      "epochs": 30,
+      "batch_size": 64,
+      "validation_holdout": 5000,
+      "train_limit": 15000,
+      "val_limit": 1024,
+      "test_limit": 0,
+      "seed": 2026,
+      "device": "auto",
+      "run": "v3",
+      "output_dir": "",
+      "eval_ratio": "",
+      "jpeg_qualities": [
+        95,
+        90,
+        85,
+        80,
+        75,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10,
+        5,
+        1
+      ],
+      "probe_symbols": 262144
+    },
+    "epoch": 29,
+    "val_loss": 0.39089135235796374,
+    "train_images": 15000,
+    "val_images": 1024,
+    "classifier": {
+      "epoch": 14,
+      "val_accuracy": 0.7548828125,
+      "seed": 2026,
+      "train_limit": 15000,
+      "holdout": 5000,
+      "train_samples": 15000
+    }
+  },
+  "device": "cpu",
+  "torch": "2.9.1+cpu",
+  "python": "3.13.5",
+  "matplotlib": "3.10.0",
+  "numpy": "2.1.3",
+  "pillow": "11.1.0",
+  "test_images": 10000,
+  "validation_candidates": [
+    {
+      "ratio": [
+        6.0,
+        2.0,
+        1.0
+      ],
+      "rows": [
+        {
+          "snr_db": -5,
+          "mode": 2,
+          "psnr": 14.030214667320251,
+          "acc": 0.720703125,
+          "neg_dual_loss": -0.43374745175242424
+        },
+        {
+          "snr_db": -5,
+          "mode": 4,
+          "psnr": 15.27041345834732,
+          "acc": 0.708984375,
+          "neg_dual_loss": -0.4566490650177002
+        },
+        {
+          "snr_db": -5,
+          "mode": 8,
+          "psnr": 15.709003448486328,
+          "acc": 0.69140625,
+          "neg_dual_loss": -0.4746680036187172
+        },
+        {
+          "snr_db": 0,
+          "mode": 2,
+          "psnr": 14.89958542585373,
+          "acc": 0.75390625,
+          "neg_dual_loss": -0.39512731973081827
+        },
+        {
+          "snr_db": 0,
+          "mode": 4,
+          "psnr": 16.50705659389496,
+          "acc": 0.7421875,
+          "neg_dual_loss": -0.39067294262349606
+        },
+        {
+          "snr_db": 0,
+          "mode": 8,
+          "psnr": 17.17023515701294,
+          "acc": 0.7353515625,
+          "neg_dual_loss": -0.39268270321190357
+        },
+        {
+          "snr_db": 5,
+          "mode": 2,
+          "psnr": 15.286559283733368,
+          "acc": 0.7568359375,
+          "neg_dual_loss": -0.4000462433323264
+        },
+        {
+          "snr_db": 5,
+          "mode": 4,
+          "psnr": 17.99199116230011,
+          "acc": 0.7578125,
+          "neg_dual_loss": -0.37603732105344534
+        },
+        {
+          "snr_db": 5,
+          "mode": 8,
+          "psnr": 19.0609210729599,
+          "acc": 0.7412109375,
+          "neg_dual_loss": -0.36952732037752867
+        },
+        {
+          "snr_db": 10,
+          "mode": 2,
+          "psnr": 15.328086912631989,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.4016124000772834
+        },
+        {
+          "snr_db": 10,
+          "mode": 4,
+          "psnr": 19.73633074760437,
+          "acc": 0.7578125,
+          "neg_dual_loss": -0.3804973363876343
+        },
+        {
+          "snr_db": 10,
+          "mode": 8,
+          "psnr": 20.865756392478943,
+          "acc": 0.7587890625,
+          "neg_dual_loss": -0.37112536653876305
+        },
+        {
+          "snr_db": 15,
+          "mode": 2,
+          "psnr": 15.321088254451752,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.40166478510946035
+        },
+        {
+          "snr_db": 15,
+          "mode": 4,
+          "psnr": 21.00554084777832,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.3775845430791378
+        },
+        {
+          "snr_db": 15,
+          "mode": 8,
+          "psnr": 21.592806100845337,
+          "acc": 0.7568359375,
+          "neg_dual_loss": -0.37657682597637177
+        },
+        {
+          "snr_db": 20,
+          "mode": 2,
+          "psnr": 15.295757353305817,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.4018395459279418
+        },
+        {
+          "snr_db": 20,
+          "mode": 4,
+          "psnr": 21.38997173309326,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.37687191646546125
+        },
+        {
+          "snr_db": 20,
+          "mode": 8,
+          "psnr": 21.92304039001465,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.37594996578991413
+        },
+        {
+          "snr_db": 25,
+          "mode": 2,
+          "psnr": 15.251719951629639,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.4021578272804618
+        },
+        {
+          "snr_db": 25,
+          "mode": 4,
+          "psnr": 21.418091297149658,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.3768136203289032
+        },
+        {
+          "snr_db": 25,
+          "mode": 8,
+          "psnr": 22.05017328262329,
+          "acc": 0.755859375,
+          "neg_dual_loss": -0.3757484620437026
+        }
+      ],
+      "psnr_policy": {
+        "initial_mode": 8,
+        "switches": [],
+        "grid": [
+          [
+            -5,
+            8
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            20,
+            8
+          ],
+          [
+            25,
+            8
+          ]
+        ],
+        "metric": "psnr",
+        "mean_score": 19.767419406345912
+      },
+      "policy": {
+        "initial_mode": 2,
+        "switches": [
+          {
+            "threshold_db": -0.8141502184077494,
+            "mode": 4
+          },
+          {
+            "threshold_db": 1.179470014508051,
+            "mode": 8
+          }
+        ],
+        "grid": [
+          [
+            -5,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            20,
+            8
+          ],
+          [
+            25,
+            8
+          ]
+        ],
+        "metric": "neg_dual_loss",
+        "mean_score": -0.38476404787174295
+      }
+    }
+  ],
+  "policy": {
+    "initial_mode": 2,
+    "switches": [
+      {
+        "threshold_db": -0.8141502184077494,
+        "mode": 4
+      },
+      {
+        "threshold_db": 1.179470014508051,
+        "mode": 8
+      }
+    ],
+    "grid": [
+      [
+        -5,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        20,
+        8
+      ],
+      [
+        25,
+        8
+      ]
+    ],
+    "metric": "neg_dual_loss",
+    "mean_score": -0.38476404787174295
+  },
+  "clean_original_top1": 0.7617,
+  "noiseless": {
+    "JPEG + FEC 4:2:1": {
+      "scheme": "JPEG + FEC 4:2:1",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 20480000,
+      "mean_optical_power": 0.5,
+      "acc": 0.4799,
+      "task_acc": null,
+      "recon_acc": 0.4799,
+      "task_correct": null,
+      "recon_correct": 4799,
+      "core_errors": null,
+      "core_bits": 0,
+      "core_ber": null,
+      "psnr": 21.918773974609376,
+      "ssim": 0.7114339488983155,
+      "jpeg_decode_failures": 0,
+      "jpeg_success_rate": 1.0,
+      "jpeg_budget_failures": 0,
+      "jpeg_mean_bytes": 339.848,
+      "errors_R": 0,
+      "bits_R": 10240000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 10240000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 10240000,
+      "ber_G": 0.0
+    },
+    "JPEG uncoded 4:2:1": {
+      "scheme": "JPEG uncoded 4:2:1",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 20480000,
+      "mean_optical_power": 0.5,
+      "acc": 0.5651,
+      "task_acc": null,
+      "recon_acc": 0.5651,
+      "task_correct": null,
+      "recon_correct": 5651,
+      "core_errors": null,
+      "core_bits": 0,
+      "core_ber": null,
+      "psnr": 23.41086120300293,
+      "ssim": 0.777159495639801,
+      "jpeg_decode_failures": 0,
+      "jpeg_success_rate": 1.0,
+      "jpeg_budget_failures": 0,
+      "jpeg_mean_bytes": 363.7412,
+      "errors_R": 0,
+      "bits_R": 10240000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 10240000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 10240000,
+      "ber_G": 0.0
+    },
+    "Unordered semantic 4:2:1": {
+      "scheme": "Unordered semantic 4:2:1",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 20480000,
+      "mean_optical_power": 0.5,
+      "acc": 0.7547,
+      "task_acc": 0.7547,
+      "recon_acc": 0.3821,
+      "task_correct": 7547,
+      "recon_correct": 3821,
+      "core_errors": 0,
+      "core_bits": 10240000,
+      "core_ber": 0.0,
+      "psnr": 22.061002142333983,
+      "ssim": 0.7034762911796569,
+      "jpeg_decode_failures": null,
+      "jpeg_success_rate": null,
+      "jpeg_budget_failures": null,
+      "jpeg_mean_bytes": null,
+      "errors_R": 0,
+      "bits_R": 10240000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 10240000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 10240000,
+      "ber_G": 0.0
+    },
+    "Ordered semantic 4:2:1": {
+      "scheme": "Ordered semantic 4:2:1",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 20480000,
+      "mean_optical_power": 0.5,
+      "acc": 0.7547,
+      "task_acc": 0.7547,
+      "recon_acc": 0.3821,
+      "task_correct": 7547,
+      "recon_correct": 3821,
+      "core_errors": 0,
+      "core_bits": 10240000,
+      "core_ber": 0.0,
+      "psnr": 22.061002142333983,
+      "ssim": 0.7034762911796569,
+      "jpeg_decode_failures": null,
+      "jpeg_success_rate": null,
+      "jpeg_budget_failures": null,
+      "jpeg_mean_bytes": null,
+      "errors_R": 0,
+      "bits_R": 10240000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 10240000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 10240000,
+      "ber_G": 0.0
+    },
+    "Proposed 6:2:1 fixed": {
+      "scheme": "Proposed 6:2:1 fixed",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 20480000,
+      "mean_optical_power": 0.5,
+      "acc": 0.7547,
+      "task_acc": 0.7547,
+      "recon_acc": 0.3821,
+      "task_correct": 7547,
+      "recon_correct": 3821,
+      "core_errors": 0,
+      "core_bits": 10240000,
+      "core_ber": 0.0,
+      "psnr": 22.061002142333983,
+      "ssim": 0.7034762911796569,
+      "jpeg_decode_failures": null,
+      "jpeg_success_rate": null,
+      "jpeg_budget_failures": null,
+      "jpeg_mean_bytes": null,
+      "errors_R": 0,
+      "bits_R": 10240000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 10240000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 10240000,
+      "ber_G": 0.0
+    }
+  },
+  "jpeg_transport": {
+    "source": "complete JPEG",
+    "packing": "raw DEFLATE, public black-image dictionary",
+    "correction": "interleaved RM(1,4) [16,5,8]",
+    "checksum": "CRC32",
+    "reference": "jpeg_uncoded.csv"
+  },
+  "interleaver_seed": 2143,
+  "iid_ber": [
+    {
+      "snr_db": -5,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 83444,
+      "bits_R": 262144,
+      "ber_R": 0.3183135986328125,
+      "errors_B": 114681,
+      "bits_B": 262144,
+      "ber_B": 0.4374732971191406,
+      "errors_G": 122598,
+      "bits_G": 262144,
+      "ber_G": 0.46767425537109375
+    },
+    {
+      "snr_db": -5,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 75583,
+      "bits_R": 262144,
+      "ber_R": 0.2883262634277344,
+      "errors_B": 119972,
+      "bits_B": 262144,
+      "ber_B": 0.4576568603515625,
+      "errors_G": 125096,
+      "bits_G": 262144,
+      "ber_G": 0.477203369140625
+    },
+    {
+      "snr_db": 0,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 56372,
+      "bits_R": 262144,
+      "ber_R": 0.2150421142578125,
+      "errors_B": 110660,
+      "bits_B": 262144,
+      "ber_B": 0.4221343994140625,
+      "errors_G": 121690,
+      "bits_G": 262144,
+      "ber_G": 0.46421051025390625
+    },
+    {
+      "snr_db": 0,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 44113,
+      "bits_R": 262144,
+      "ber_R": 0.16827774047851562,
+      "errors_B": 116094,
+      "bits_B": 262144,
+      "ber_B": 0.44286346435546875,
+      "errors_G": 123871,
+      "bits_G": 262144,
+      "ber_G": 0.4725303649902344
+    },
+    {
+      "snr_db": 5,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 30781,
+      "bits_R": 262144,
+      "ber_R": 0.11742019653320312,
+      "errors_B": 92575,
+      "bits_B": 262144,
+      "ber_B": 0.3531455993652344,
+      "errors_G": 121284,
+      "bits_G": 262144,
+      "ber_G": 0.4626617431640625
+    },
+    {
+      "snr_db": 5,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 15918,
+      "bits_R": 262144,
+      "ber_R": 0.06072235107421875,
+      "errors_B": 94224,
+      "bits_B": 262144,
+      "ber_B": 0.35943603515625,
+      "errors_G": 119245,
+      "bits_G": 262144,
+      "ber_G": 0.4548835754394531
+    },
+    {
+      "snr_db": 10,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 15439,
+      "bits_R": 262144,
+      "ber_R": 0.058895111083984375,
+      "errors_B": 54851,
+      "bits_B": 262144,
+      "ber_B": 0.20923995971679688,
+      "errors_G": 109944,
+      "bits_G": 262144,
+      "ber_G": 0.419403076171875
+    },
+    {
+      "snr_db": 10,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 2795,
+      "bits_R": 262144,
+      "ber_R": 0.010662078857421875,
+      "errors_B": 57193,
+      "bits_B": 262144,
+      "ber_B": 0.21817398071289062,
+      "errors_G": 108754,
+      "bits_G": 262144,
+      "ber_G": 0.41486358642578125
+    },
+    {
+      "snr_db": 15,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 5661,
+      "bits_R": 262144,
+      "ber_R": 0.021595001220703125,
+      "errors_B": 23059,
+      "bits_B": 262144,
+      "ber_B": 0.08796310424804688,
+      "errors_G": 60044,
+      "bits_G": 262144,
+      "ber_G": 0.2290496826171875
+    },
+    {
+      "snr_db": 15,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 58,
+      "bits_R": 262144,
+      "ber_R": 0.00022125244140625,
+      "errors_B": 28681,
+      "bits_B": 262144,
+      "ber_B": 0.10940933227539062,
+      "errors_G": 80371,
+      "bits_G": 262144,
+      "ber_G": 0.3065910339355469
+    },
+    {
+      "snr_db": 20,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 501,
+      "bits_R": 262144,
+      "ber_R": 0.001911163330078125,
+      "errors_B": 3572,
+      "bits_B": 262144,
+      "ber_B": 0.0136260986328125,
+      "errors_G": 12400,
+      "bits_G": 262144,
+      "ber_G": 0.04730224609375
+    },
+    {
+      "snr_db": 20,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 0,
+      "bits_R": 262144,
+      "ber_R": 0.0,
+      "errors_B": 9717,
+      "bits_B": 262144,
+      "ber_B": 0.037067413330078125,
+      "errors_G": 31074,
+      "bits_G": 262144,
+      "ber_G": 0.11853790283203125
+    },
+    {
+      "snr_db": 25,
+      "scheme": "Ordered semantic 4:2:1",
+      "errors_R": 1,
+      "bits_R": 262144,
+      "ber_R": 3.814697265625e-06,
+      "errors_B": 24,
+      "bits_B": 262144,
+      "ber_B": 9.1552734375e-05,
+      "errors_G": 333,
+      "bits_G": 262144,
+      "ber_G": 0.001270294189453125
+    },
+    {
+      "snr_db": 25,
+      "scheme": "Proposed 6:2:1 fixed",
+      "errors_R": 0,
+      "bits_R": 262144,
+      "ber_R": 0.0,
+      "errors_B": 698,
+      "bits_B": 262144,
+      "ber_B": 0.00266265869140625,
+      "errors_G": 3144,
+      "bits_G": 262144,
+      "ber_G": 0.011993408203125
+    }
+  ],
+  "paired_task_comparisons": [
+    {
+      "snr_db": -5,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 2126,
+      "second_only_correct": 470
+    },
+    {
+      "snr_db": -5,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 488,
+      "second_only_correct": 202
+    },
+    {
+      "snr_db": -5,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 2770,
+      "second_only_correct": 497
+    },
+    {
+      "snr_db": 0,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 1613,
+      "second_only_correct": 452
+    },
+    {
+      "snr_db": 0,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 343,
+      "second_only_correct": 226
+    },
+    {
+      "snr_db": 0,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 1855,
+      "second_only_correct": 482
+    },
+    {
+      "snr_db": 5,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 952,
+      "second_only_correct": 379
+    },
+    {
+      "snr_db": 5,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 313,
+      "second_only_correct": 197
+    },
+    {
+      "snr_db": 5,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 1118,
+      "second_only_correct": 429
+    },
+    {
+      "snr_db": 10,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 522,
+      "second_only_correct": 305
+    },
+    {
+      "snr_db": 10,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 271,
+      "second_only_correct": 205
+    },
+    {
+      "snr_db": 10,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 649,
+      "second_only_correct": 366
+    },
+    {
+      "snr_db": 15,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 265,
+      "second_only_correct": 212
+    },
+    {
+      "snr_db": 15,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 138,
+      "second_only_correct": 132
+    },
+    {
+      "snr_db": 15,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 303,
+      "second_only_correct": 244
+    },
+    {
+      "snr_db": 20,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 118,
+      "second_only_correct": 106
+    },
+    {
+      "snr_db": 20,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 31,
+      "second_only_correct": 36
+    },
+    {
+      "snr_db": 20,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 122,
+      "second_only_correct": 115
+    },
+    {
+      "snr_db": 25,
+      "first": "Ordered semantic 4:2:1",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 13,
+      "second_only_correct": 12
+    },
+    {
+      "snr_db": 25,
+      "first": "Proposed 6:2:1 fixed",
+      "second": "Ordered semantic 4:2:1",
+      "first_only_correct": 1,
+      "second_only_correct": 0
+    },
+    {
+      "snr_db": 25,
+      "first": "Proposed 6:2:1 adaptive",
+      "second": "Unordered semantic 4:2:1",
+      "first_only_correct": 13,
+      "second_only_correct": 11
+    }
+  ]
+}

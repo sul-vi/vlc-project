@@ -1,0 +1,7 @@
+# 本机 Python 环境和字节码缓存
+/.venv/
+__pycache__/
+*.pyc
+
+# 运行时从官方源下载的 CIFAR-10 归档
+/data/cifar-10-binary.tar.gz

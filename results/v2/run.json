@@ -1,0 +1,783 @@
+{
+  "config": {
+    "dataset": "cifar10",
+    "data_dir": "C:\\Users\\sll\\Desktop\\vlc project\\data",
+    "image_size": 32,
+    "uniform": [
+      4.0,
+      2.0,
+      1.0
+    ],
+    "proposed": [
+      5.0,
+      2.0,
+      1.0
+    ],
+    "channels": 8,
+    "width": 32,
+    "compression": 0.8,
+    "balanced_pairs": true,
+    "candidates": [
+      [
+        5.0,
+        2.0,
+        1.0
+      ],
+      [
+        6.0,
+        2.0,
+        1.0
+      ]
+    ],
+    "classifier_epochs": 14,
+    "feature_weight": 0.002,
+    "snrs": [
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "train_snr": [
+      -5.0,
+      20.0
+    ],
+    "mode_probs": [
+      0.25,
+      0.25,
+      0.5
+    ],
+    "val_points": [
+      [
+        2,
+        5.0
+      ],
+      [
+        4,
+        10.0
+      ],
+      [
+        8,
+        5.0
+      ],
+      [
+        8,
+        20.0
+      ]
+    ],
+    "lr": 0.001,
+    "epochs": 30,
+    "batch_size": 64,
+    "validation_holdout": 5000,
+    "train_limit": 15000,
+    "val_limit": 1024,
+    "test_limit": 0,
+    "seed": 2026,
+    "device": "auto",
+    "run": "v2",
+    "output_dir": "",
+    "eval_ratio": "",
+    "jpeg_qualities": [
+      95,
+      90,
+      85,
+      80,
+      75,
+      70,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      5,
+      1
+    ],
+    "probe_symbols": 262144
+  },
+  "checkpoint": {
+    "config": {
+      "dataset": "cifar10",
+      "data_dir": "C:\\Users\\sll\\Desktop\\vlc project\\data",
+      "image_size": 32,
+      "uniform": [
+        4.0,
+        2.0,
+        1.0
+      ],
+      "proposed": [
+        6.0,
+        2.0,
+        1.0
+      ],
+      "channels": 8,
+      "width": 32,
+      "compression": 0.8,
+      "balanced_pairs": true,
+      "candidates": [
+        [
+          5.0,
+          2.0,
+          1.0
+        ],
+        [
+          6.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "classifier_epochs": 14,
+      "feature_weight": 0.002,
+      "snrs": [
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "train_snr": [
+        -5.0,
+        20.0
+      ],
+      "thresholds": [
+        7.5,
+        17.5
+      ],
+      "mode_probs": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "val_points": [
+        [
+          2,
+          5.0
+        ],
+        [
+          4,
+          10.0
+        ],
+        [
+          8,
+          5.0
+        ],
+        [
+          8,
+          20.0
+        ]
+      ],
+      "lr": 0.001,
+      "epochs": 30,
+      "batch_size": 64,
+      "validation_holdout": 5000,
+      "train_limit": 15000,
+      "val_limit": 1024,
+      "test_limit": 0,
+      "seed": 2026,
+      "device": "auto",
+      "run": "v2",
+      "output_dir": "",
+      "jpeg_qualities": [
+        95,
+        90,
+        85,
+        80,
+        75,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10,
+        5,
+        1
+      ],
+      "probe_symbols": 262144
+    },
+    "epoch": 29,
+    "val_psnr": 22.088310847679775,
+    "train_images": 15000,
+    "val_images": 1024,
+    "classifier": {
+      "epoch": 14,
+      "val_accuracy": 0.7548828125,
+      "seed": 2026,
+      "train_limit": 15000,
+      "holdout": 5000,
+      "train_samples": 15000
+    }
+  },
+  "device": "cpu",
+  "torch": "2.9.1+cpu",
+  "python": "3.13.5",
+  "matplotlib": "3.10.0",
+  "numpy": "2.1.3",
+  "pillow": "11.1.0",
+  "test_images": 10000,
+  "validation_candidates": [
+    {
+      "ratio": [
+        5.0,
+        2.0,
+        1.0
+      ],
+      "rows": [
+        {
+          "snr_db": -5,
+          "mode": 2,
+          "psnr": 17.680039763450623,
+          "acc": 0.310546875
+        },
+        {
+          "snr_db": -5,
+          "mode": 4,
+          "psnr": 18.02239239215851,
+          "acc": 0.3291015625
+        },
+        {
+          "snr_db": -5,
+          "mode": 8,
+          "psnr": 18.096280336380005,
+          "acc": 0.345703125
+        },
+        {
+          "snr_db": 0,
+          "mode": 2,
+          "psnr": 20.360248923301697,
+          "acc": 0.41796875
+        },
+        {
+          "snr_db": 0,
+          "mode": 4,
+          "psnr": 20.513355255126953,
+          "acc": 0.4287109375
+        },
+        {
+          "snr_db": 0,
+          "mode": 8,
+          "psnr": 20.59585988521576,
+          "acc": 0.43359375
+        },
+        {
+          "snr_db": 5,
+          "mode": 2,
+          "psnr": 21.79985761642456,
+          "acc": 0.4609375
+        },
+        {
+          "snr_db": 5,
+          "mode": 4,
+          "psnr": 21.696802020072937,
+          "acc": 0.47265625
+        },
+        {
+          "snr_db": 5,
+          "mode": 8,
+          "psnr": 21.79669153690338,
+          "acc": 0.484375
+        },
+        {
+          "snr_db": 10,
+          "mode": 2,
+          "psnr": 21.92983865737915,
+          "acc": 0.4716796875
+        },
+        {
+          "snr_db": 10,
+          "mode": 4,
+          "psnr": 22.165176033973694,
+          "acc": 0.4765625
+        },
+        {
+          "snr_db": 10,
+          "mode": 8,
+          "psnr": 22.277840495109558,
+          "acc": 0.484375
+        },
+        {
+          "snr_db": 15,
+          "mode": 2,
+          "psnr": 21.921682238578796,
+          "acc": 0.466796875
+        },
+        {
+          "snr_db": 15,
+          "mode": 4,
+          "psnr": 22.43925642967224,
+          "acc": 0.4794921875
+        },
+        {
+          "snr_db": 15,
+          "mode": 8,
+          "psnr": 22.48931908607483,
+          "acc": 0.494140625
+        },
+        {
+          "snr_db": 20,
+          "mode": 2,
+          "psnr": 21.909130930900574,
+          "acc": 0.4599609375
+        },
+        {
+          "snr_db": 20,
+          "mode": 4,
+          "psnr": 22.494611144065857,
+          "acc": 0.4755859375
+        },
+        {
+          "snr_db": 20,
+          "mode": 8,
+          "psnr": 22.586636781692505,
+          "acc": 0.490234375
+        }
+      ],
+      "policy": {
+        "initial_mode": 8,
+        "switches": [
+          {
+            "threshold_db": 4.9337021787742135,
+            "mode": 2
+          },
+          {
+            "threshold_db": 5.045079282098981,
+            "mode": 8
+          }
+        ],
+        "grid": [
+          [
+            -5,
+            8
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            20,
+            8
+          ]
+        ],
+        "mean_psnr": 21.307632366816204
+      }
+    },
+    {
+      "ratio": [
+        6.0,
+        2.0,
+        1.0
+      ],
+      "rows": [
+        {
+          "snr_db": -5,
+          "mode": 2,
+          "psnr": 17.680039763450623,
+          "acc": 0.310546875
+        },
+        {
+          "snr_db": -5,
+          "mode": 4,
+          "psnr": 18.058926820755005,
+          "acc": 0.3330078125
+        },
+        {
+          "snr_db": -5,
+          "mode": 8,
+          "psnr": 18.12517499923706,
+          "acc": 0.3515625
+        },
+        {
+          "snr_db": 0,
+          "mode": 2,
+          "psnr": 20.360248923301697,
+          "acc": 0.41796875
+        },
+        {
+          "snr_db": 0,
+          "mode": 4,
+          "psnr": 20.51289188861847,
+          "acc": 0.4296875
+        },
+        {
+          "snr_db": 0,
+          "mode": 8,
+          "psnr": 20.566057443618774,
+          "acc": 0.431640625
+        },
+        {
+          "snr_db": 5,
+          "mode": 2,
+          "psnr": 21.79985761642456,
+          "acc": 0.4609375
+        },
+        {
+          "snr_db": 5,
+          "mode": 4,
+          "psnr": 21.644208669662476,
+          "acc": 0.4755859375
+        },
+        {
+          "snr_db": 5,
+          "mode": 8,
+          "psnr": 21.721516609191895,
+          "acc": 0.4833984375
+        },
+        {
+          "snr_db": 10,
+          "mode": 2,
+          "psnr": 21.92983865737915,
+          "acc": 0.4716796875
+        },
+        {
+          "snr_db": 10,
+          "mode": 4,
+          "psnr": 22.07944691181183,
+          "acc": 0.4892578125
+        },
+        {
+          "snr_db": 10,
+          "mode": 8,
+          "psnr": 22.226553082466125,
+          "acc": 0.484375
+        },
+        {
+          "snr_db": 15,
+          "mode": 2,
+          "psnr": 21.921682238578796,
+          "acc": 0.466796875
+        },
+        {
+          "snr_db": 15,
+          "mode": 4,
+          "psnr": 22.385607719421387,
+          "acc": 0.484375
+        },
+        {
+          "snr_db": 15,
+          "mode": 8,
+          "psnr": 22.45793354511261,
+          "acc": 0.4970703125
+        },
+        {
+          "snr_db": 20,
+          "mode": 2,
+          "psnr": 21.909130930900574,
+          "acc": 0.4599609375
+        },
+        {
+          "snr_db": 20,
+          "mode": 4,
+          "psnr": 22.4922776222229,
+          "acc": 0.4765625
+        },
+        {
+          "snr_db": 20,
+          "mode": 8,
+          "psnr": 22.567603588104248,
+          "acc": 0.4931640625
+        }
+      ],
+      "policy": {
+        "initial_mode": 8,
+        "switches": [
+          {
+            "threshold_db": 3.621482711792447,
+            "mode": 2
+          },
+          {
+            "threshold_db": 6.044392381522685,
+            "mode": 8
+          }
+        ],
+        "grid": [
+          [
+            -5,
+            8
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            15,
+            8
+          ],
+          [
+            20,
+            8
+          ]
+        ],
+        "mean_psnr": 21.29053004582723
+      }
+    }
+  ],
+  "policy": {
+    "initial_mode": 8,
+    "switches": [
+      {
+        "threshold_db": 4.9337021787742135,
+        "mode": 2
+      },
+      {
+        "threshold_db": 5.045079282098981,
+        "mode": 8
+      }
+    ],
+    "grid": [
+      [
+        -5,
+        8
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        20,
+        8
+      ]
+    ],
+    "mean_psnr": 21.307632366816204
+  },
+  "clean_original_top1": 0.7617,
+  "noiseless": {
+    "uniform": {
+      "scheme": "uniform",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 10240000,
+      "mean_optical_power": 0.5,
+      "acc": 0.4894,
+      "psnr": 22.65607126464844,
+      "ssim": 0.725899176120758,
+      "jpeg_decode_failures": null,
+      "jpeg_budget_failures": null,
+      "jpeg_mean_bytes": null,
+      "errors_R": 0,
+      "bits_R": 5120000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 5120000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 5120000,
+      "ber_G": 0.0
+    },
+    "proposed": {
+      "scheme": "proposed",
+      "snr_db": "noiseless",
+      "mode": 8,
+      "images": 10000,
+      "physical_slots": 10240000,
+      "mean_optical_power": 0.5,
+      "acc": 0.4894,
+      "psnr": 22.65607126464844,
+      "ssim": 0.725899176120758,
+      "jpeg_decode_failures": null,
+      "jpeg_budget_failures": null,
+      "jpeg_mean_bytes": null,
+      "errors_R": 0,
+      "bits_R": 5120000,
+      "ber_R": 0.0,
+      "errors_B": 0,
+      "bits_B": 5120000,
+      "ber_B": 0.0,
+      "errors_G": 0,
+      "bits_G": 5120000,
+      "ber_G": 0.0
+    }
+  },
+  "iid_ber": [
+    {
+      "snr_db": -5,
+      "scheme": "Semantic uniform",
+      "errors_R": 83444,
+      "bits_R": 262144,
+      "ber_R": 0.3183135986328125,
+      "errors_B": 114681,
+      "bits_B": 262144,
+      "ber_B": 0.4374732971191406,
+      "errors_G": 122598,
+      "bits_G": 262144,
+      "ber_G": 0.46767425537109375
+    },
+    {
+      "snr_db": -5,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 79008,
+      "bits_R": 262144,
+      "ber_R": 0.3013916015625,
+      "errors_B": 117807,
+      "bits_B": 262144,
+      "ber_B": 0.4493980407714844,
+      "errors_G": 124166,
+      "bits_G": 262144,
+      "ber_G": 0.47365570068359375
+    },
+    {
+      "snr_db": 0,
+      "scheme": "Semantic uniform",
+      "errors_R": 56372,
+      "bits_R": 262144,
+      "ber_R": 0.2150421142578125,
+      "errors_B": 110660,
+      "bits_B": 262144,
+      "ber_B": 0.4221343994140625,
+      "errors_G": 121690,
+      "bits_G": 262144,
+      "ber_G": 0.46421051025390625
+    },
+    {
+      "snr_db": 0,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 49180,
+      "bits_R": 262144,
+      "ber_R": 0.1876068115234375,
+      "errors_B": 114056,
+      "bits_B": 262144,
+      "ber_B": 0.435089111328125,
+      "errors_G": 123067,
+      "bits_G": 262144,
+      "ber_G": 0.4694633483886719
+    },
+    {
+      "snr_db": 5,
+      "scheme": "Semantic uniform",
+      "errors_R": 30781,
+      "bits_R": 262144,
+      "ber_R": 0.11742019653320312,
+      "errors_B": 92575,
+      "bits_B": 262144,
+      "ber_B": 0.3531455993652344,
+      "errors_G": 121284,
+      "bits_G": 262144,
+      "ber_G": 0.4626617431640625
+    },
+    {
+      "snr_db": 5,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 21604,
+      "bits_R": 262144,
+      "ber_R": 0.0824127197265625,
+      "errors_B": 92809,
+      "bits_B": 262144,
+      "ber_B": 0.3540382385253906,
+      "errors_G": 120329,
+      "bits_G": 262144,
+      "ber_G": 0.4590187072753906
+    },
+    {
+      "snr_db": 10,
+      "scheme": "Semantic uniform",
+      "errors_R": 15439,
+      "bits_R": 262144,
+      "ber_R": 0.058895111083984375,
+      "errors_B": 54851,
+      "bits_B": 262144,
+      "ber_B": 0.20923995971679688,
+      "errors_G": 109944,
+      "bits_G": 262144,
+      "ber_G": 0.419403076171875
+    },
+    {
+      "snr_db": 10,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 6323,
+      "bits_R": 262144,
+      "ber_R": 0.024120330810546875,
+      "errors_B": 53482,
+      "bits_B": 262144,
+      "ber_B": 0.20401763916015625,
+      "errors_G": 108597,
+      "bits_G": 262144,
+      "ber_G": 0.4142646789550781
+    },
+    {
+      "snr_db": 15,
+      "scheme": "Semantic uniform",
+      "errors_R": 5661,
+      "bits_R": 262144,
+      "ber_R": 0.021595001220703125,
+      "errors_B": 23059,
+      "bits_B": 262144,
+      "ber_B": 0.08796310424804688,
+      "errors_G": 60044,
+      "bits_G": 262144,
+      "ber_G": 0.2290496826171875
+    },
+    {
+      "snr_db": 15,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 596,
+      "bits_R": 262144,
+      "ber_R": 0.0022735595703125,
+      "errors_B": 23729,
+      "bits_B": 262144,
+      "ber_B": 0.09051895141601562,
+      "errors_G": 69283,
+      "bits_G": 262144,
+      "ber_G": 0.2642936706542969
+    },
+    {
+      "snr_db": 20,
+      "scheme": "Semantic uniform",
+      "errors_R": 501,
+      "bits_R": 262144,
+      "ber_R": 0.001911163330078125,
+      "errors_B": 3572,
+      "bits_B": 262144,
+      "ber_B": 0.0136260986328125,
+      "errors_G": 12400,
+      "bits_G": 262144,
+      "ber_G": 0.04730224609375
+    },
+    {
+      "snr_db": 20,
+      "scheme": "Hierarchical 8-CPAM",
+      "errors_R": 2,
+      "bits_R": 262144,
+      "ber_R": 7.62939453125e-06,
+      "errors_B": 6110,
+      "bits_B": 262144,
+      "ber_B": 0.02330780029296875,
+      "errors_G": 20791,
+      "bits_G": 262144,
+      "ber_G": 0.07931137084960938
+    }
+  ]
+}
